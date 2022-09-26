@@ -1,0 +1,23 @@
+{
+  "name": "split_page",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1", 
+    "dev": "parcel src/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xellamay/split_page.git"
+  },
+  "author": "Alena",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/xellamay/split_page/issues"
+  },
+  "homepage": "https://github.com/xellamay/split_page#readme",
+  "devDependencies": {
+    "parcel": "^2.7.0"
+  }
+}
