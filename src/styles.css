@@ -1,3 +1,4 @@
+
 *,
 *:before,
 *:after {
@@ -12,6 +13,7 @@ body {
 h1 {
     color: #fff;
     font-size: 70px;
+    white-space: nowrap;
 }
 
 .btn {
@@ -24,6 +26,10 @@ h1 {
     text-transform: uppercase;
     padding: 20px 60px;
     cursor: pointer;
+    position: absolute;
+    left: 39%;
+    top: 40%;
+    white-space: nowrap;
 }
 
 .container {
@@ -32,36 +38,45 @@ h1 {
     height: 100vh;
 }
 
-.playstation {
+.title {
+    position: absolute;
+    top: 20%;
+    transform: translateX(-50%);
+    left: 50%;
+}
+
+.section_playstation {
     background-image: url(img/ps.jpg);
     width: 50%;
     background-size: cover;
+    background-position: center;
+    transition: 1.5s;
     position: relative;
 }
 
-.xbox {
+.section_playstation::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color:rgba(87, 84, 236, 0.7);
+}
+
+.section_xbox {
     background-image: url(img/xbox.jpg);
     width: 50%;
     background-size: cover;
+    background-position: center;
+    transition: 1.5s;
     position: relative;
 }
 
-.playstation__title {
+.section_xbox::before {
+    content: '';
     position: absolute;
-    top: 20%;
-    left: 20%;
-}
-
-.xbox__title {
-    position: absolute;
-    top: 20%;
-    right: 20%;
-}
-
-.btn_blue {
-    position: absolute;
-    top: 40%;
-    left: 35%;
+    width: 100%;
+    height: 100%;
+    background-color:rgba(43, 43, 43, 0.8);
 }
 
 .btn_blue:hover {
@@ -69,13 +84,11 @@ h1 {
     border-color: rgb(76, 76, 249)
 }
 
-.btn_green {
-    position: absolute;
-    top: 40%;
-    right: 35%;
-}
-
 .btn_green:hover {
     background-color: rgb(8, 153, 56);
     border-color: rgb(8, 153, 56);
+}
+
+.active {
+    width: 90%;
 }
