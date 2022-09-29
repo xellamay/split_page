@@ -5,7 +5,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "parcel src/index.html --dist-dir dev",
-    "build": "parcel build src/index.html --dist-dir build"
+    "build": "parcel build src/index.html --dist-dir build --public-url .",
+    "deploy": "npm run build && gh-pages -d build"
   },
   "repository": {
     "type": "git",
@@ -18,6 +19,7 @@
   },
   "homepage": "https://github.com/xellamay/split_page#readme",
   "devDependencies": {
+    "gh-pages": "^4.0.0",
     "parcel": "^2.7.0"
   }
 }
