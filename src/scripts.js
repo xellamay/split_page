@@ -12,3 +12,5 @@ sections.forEach((section) =>{
         section.classList.add("split-viewer__section_active")
     })
 })
+
+

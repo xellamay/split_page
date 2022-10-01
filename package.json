@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/xellamay/split_page#readme",
   "devDependencies": {
+    "@parcel/transformer-sass": "^2.7.0",
     "gh-pages": "^4.0.0",
     "parcel": "^2.7.0"
   }
