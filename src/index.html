@@ -9,14 +9,23 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="container">
-        <div class="section section_playstation">
-            <h1 class="title">Playstation 5</h1>
-            <button class="btn btn_blue">Buy now</button>
-        </div>
-        <div class="section section_xbox">
-            <h1 class="title">XBox Series X</h1>
-            <button class="btn btn_green">Buy now</button>
+    <!-- TODO -->
+    <!-- добавить паддинги контейнеру  -->
+    <!-- может выпадать шрифт -->
+    <div style="height: 100vh; width: 100vw">
+        <div class="split-viewer">
+            <div class="split-viewer__section split-viewer__section_left">
+                <div class="split-viewer__content">
+                    <h2 class="split-viewer__title">Playstation</h2>
+                    <button class="split-viewer__btn split-viewer__btn_blue">Buy now</button>
+                </div>
+            </div>
+            <div class="split-viewer__section split-viewer__section_right">
+                <div class="split-viewer__content">
+                    <h2 class="split-viewer__title">XBox Series X</h2>
+                    <button class="split-viewer__btn split-viewer__btn_green">Buy now</button>
+                </div>
+            </div>
         </div>
     </div>
 </body>

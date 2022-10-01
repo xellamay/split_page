@@ -1,14 +1,14 @@
-const sections = document.querySelectorAll(".section");
+const sections = document.querySelectorAll(".split-viewer__section");
 
 function clearClass() {
     sections.forEach((section) => {
-        section.classList.remove("active")
+        section.classList.remove("split-viewer__section_active")
     })
 }
 
 sections.forEach((section) =>{
     section.addEventListener("mouseenter", function() {
         clearClass();
-        section.classList.add("active")
+        section.classList.add("split-viewer__section_active")
     })
 })
